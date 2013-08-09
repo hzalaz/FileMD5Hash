@@ -36,6 +36,13 @@
 // In bytes
 #define FileHashDefaultChunkSizeForReadingData 4096
 
+// Extern
+#if defined(__cplusplus)
+    #define FILEMD5HASH_EXTERN extern "C"
+#else
+    #define FILEMD5HASH_EXTERN extern
+#endif
+
 
 //---------------------------------------------------------
 // Function declaration
